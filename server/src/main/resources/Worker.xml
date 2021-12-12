@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE hibernate-mapping PUBLIC
+
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="db.entity.Worker" table="salon_worker">
+
+        <meta attribute="class-description">This class
+            contains developer's dillers.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="fullName" column="full_name" type="string"/>
+        <property name="specialty" column="specialty" type="string"/>
+        <property name="area" column="area" type="string"/>
+        <property name="experience" column="experience" type="float"/>
+        <property name="telephone" column="telephone" type="string"/>
+        <property name="user" column="user" type="int"/>
+    </class>
+
+</hibernate-mapping>

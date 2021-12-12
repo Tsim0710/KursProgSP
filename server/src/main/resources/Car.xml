@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE hibernate-mapping PUBLIC
+
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="db.entity.Car" table="car">
+
+        <meta attribute="class-description">This class
+            contains developer's dillers.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="brand" column="car_brand" type="string"/>
+        <property name="stateNumber" column="state_number" type="string"/>
+        <property name="issueYear" column="issue_year" type="string"/>
+        <property name="mileage" column="mileage" type="string"/>
+        <property name="clientId" column="client" type="int"/>
+    </class>
+
+</hibernate-mapping>

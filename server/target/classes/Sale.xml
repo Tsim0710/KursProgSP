@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE hibernate-mapping PUBLIC
+
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="db.entity.Sale" table="sale">
+
+        <meta attribute="class-description">This class
+            contains developer's dillers.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="car" column="car" type="int"/>
+        <property name="area" column="area" type="string"/>
+        <property name="price" column="price" type="float"/>
+        <property name="status" column="status" type="string"/>
+        <property name="worker" column="worker" type="int"/>
+        <property name="requestDate" column="request_date" type="string"/>
+        <property name="diller" column="diller" type="int"/>
+        <property name="comment" column="comment" type="string"/>
+        <property name="client" column="client" type="int"/>
+    </class>
+
+</hibernate-mapping>
